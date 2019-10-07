@@ -5,7 +5,7 @@ const Recipe = ({ data }) => {
     <div>
       <h1>{data.recipe.label}</h1>
       <p>{data.recipe.calories}</p>
-      <img src={data.recipe.image} alt="" />
+      <img src={data.recipe.image} alt={data.recipe.label} />
     </div>
   );
 };
